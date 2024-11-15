@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.inversion{
+    @apply invert;
+}
+.cardinfo{
+   @apply text-[12px] w-48;
+}
+.songinfo{
+    @apply text-white;
+}
+.seekcirc{
+    @apply absolute bottom-[-7px] bg-white rounded-full w-[15px] h-[15px] left-[0%] trans
+}
+.volumee{
+    @apply max-sm:hidden inversion relative top-[-25px] flex items-center space-x-2 hover:cursor-pointer;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: gray;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+   
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+.trans{
+    transition: left 0.5s;
+}
